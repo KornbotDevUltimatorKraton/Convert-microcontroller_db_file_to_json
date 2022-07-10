@@ -27,11 +27,11 @@ for i in range(0,len(mcuextract)):
              #print(obj)
              changenamealternative(TARGET,mcuextract[i]) 
 
-             """
+            
              stm32writer = open(TARGET+mcuextract[i].split(".")[0]+".json",'a')   # Write the json file converted from the xml to json in the target directory 
              print(json.dumps(obj))
              stm32writer.write(json.dumps(obj))   # Write the file into the directory 
-             """ 
+              
     except: 
         print("Now splitting.....",mcuextract[i])
     if i == len(mcuextract): 
